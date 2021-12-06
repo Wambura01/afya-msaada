@@ -1,0 +1,95 @@
+.signup-page {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(90deg, rgba(0,0,0,1), rgba(13,121,9,1) 100%);
+
+    .particles {
+        overflow: hidden;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        bottom: 0px;
+        right: 0px;
+        z-index: 0;
+    }
+
+    .form-container {
+        background-color: white;
+        margin: 6rem 0;
+        width: 400px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        box-shadow: 0 0 25px black;
+        z-index: 100;
+        
+        h2 {
+            text-align: center;
+            font-size: 2.5rem;
+        }
+
+        .form {
+            width: 80%;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            margin-top: 1.5rem;
+
+            .input {
+                width: 100%;
+                text-align: center;
+                margin-bottom: 2rem;
+
+                .icon {
+                    font-size: .8rem;
+                }
+            }
+        }
+
+        .form-button {
+            border: none;
+            border-radius: 10px;
+            padding: .5rem 5rem;
+            margin: 1.3rem 0;
+            background: linear-gradient(90deg, rgba(0,0,0,.8), rgba(13,121,9,.8));
+            cursor: pointer;
+            color: white;
+            font-weight: 600;
+            transition: background .3s linear;
+        }
+
+        .form-button:hover {
+            background: black;
+        }
+
+        .signin-option {
+            width: 200px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 1.5rem 0;
+
+            .text {
+                margin: 0;
+                font-size: .8rem;
+            }
+
+            .link {
+                margin-top: .5rem;
+                font-weight: bold;
+                color: rgb(13,121,9);
+                text-decoration: underline;
+                cursor: pointer;
+            }
+
+            .link:hover {
+                color: black;
+            }
+        }
+    }
+}

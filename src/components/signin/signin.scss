@@ -1,0 +1,162 @@
+.signin-page {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(90deg, rgba(0,0,0,1), rgba(13,121,9,1) 100%);
+
+    .particles {
+        overflow: hidden;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        bottom: 0px;
+        right: 0px;
+        z-index: 0;
+    }
+
+    .form-container {
+        background-color: white;
+        margin: 6rem 0;
+        width: 400px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        box-shadow: 0 0 25px black;
+        
+        h2 {
+            text-align: center;
+            font-size: 2.5rem;
+        }
+
+        .form {
+            width: 80%;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            margin-top: 1.5rem;
+
+            .input {
+                width: 100%;
+                text-align: center;
+
+                .icon {
+                    font-size: .8rem;
+                }
+            }
+
+            .input:nth-child(2) {
+                margin-top: 2rem;
+            }
+        }
+
+        .forgot-passoword {
+            text-align: center;
+
+            p {
+                font-size: .8rem;
+                padding-right: 1rem;
+                font-weight: 600;
+                cursor: pointer;
+                color: rgb(13,121,9);
+                transition: font-size .2s ease-in;
+                margin-bottom: 0;
+            }
+
+            p:hover {
+                color: black;
+                font-size: .82rem;
+            }
+        }
+
+        .form-button {
+            border: none;
+            border-radius: 10px;
+            padding: .5rem 5rem;
+            margin: 1.3rem 0;
+            background: linear-gradient(90deg, rgba(0,0,0,.8), rgba(13,121,9,.8));
+            cursor: pointer;
+            color: white;
+            font-weight: 600;
+            transition: background .3s linear;
+        }
+
+        .form-button:hover {
+            background: black;
+        }
+
+        .signin-options {
+            width: 300px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 6rem;
+
+            .option-text {
+                font-size: .8rem;
+            }
+    
+            .options-container {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+    
+                .option {
+                    font-size: 2.2rem;
+                    cursor: pointer;
+                    transition: all .3s linear;
+                }
+
+                .google:hover {
+                    background-color: #DB4437;
+                    color: white;
+                    padding: .6rem;
+                    border-radius: 50%;
+                }
+
+                .facebook:hover {
+                    background-color: #4267B2;
+                    color: white;
+                    padding: .6rem;
+                    border-radius: 50%;
+                }
+
+                .linkedin:hover {
+                    background-color:#0077B5;
+                    color: white;
+                    padding: .6rem;
+                    border-radius: 50%;
+                }
+            }
+        }
+
+        .signup-option {
+            width: 200px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 1.5rem;
+
+            .text {
+                margin: 0;
+                font-size: .8rem;
+            }
+
+            .link {
+                margin-top: .5rem;
+                font-weight: bold;
+                color: rgb(13,121,9);
+                text-decoration: underline;
+                cursor: pointer;
+            }
+
+            .link:hover {
+                color: black;
+            }
+        }
+    }
+}
